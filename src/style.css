@@ -1,0 +1,171 @@
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #2B303A; /* Gris foncé */
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #4B5154; /* Gris moyen */
+    padding: 10px;
+}
+
+.nav .site-title,
+.nav .links-div {
+    margin-right: 20px;
+}
+
+.nav ul {
+    list-style-type: none;
+}
+
+.nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+.nav ul li a, .nav div a {
+    color: #FFFFFF; /* Blanc */
+    text-decoration: none;
+}
+
+.site-title a {
+    font-weight: 900;
+    color: #FF3737; /* Rouge vif */
+}
+
+.header {
+    padding-top: 50px;
+}
+
+.nav ul li a {
+    color: #FFFFFF; /* Blanc */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+    color: #FF3737; /* Rouge vif */
+}
+
+.aboutme {
+    background-color: #343A40; /* Gris foncé alternatif */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 55, 55, 0.1); /* Ombre rouge légère */
+    margin-bottom: 20px;
+}
+
+.aboutme h2 {
+    color: #FF3737; /* Rouge vif */
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.aboutme p {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #FFFFFF; /* Blanc */
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.myfav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #343A40; /* Gris foncé alternatif */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 55, 55, 0.1); /* Ombre rouge légère */
+    margin-bottom: 30px;
+}
+
+.myfav h2 {
+    color: #FF3737; /* Rouge vif */
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.char-container img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 10px;
+    border: 2px solid #FF3737; /* Bordure rouge */
+}
+
+.contactme {
+    background-color: #343A40; /* Gris foncé alternatif */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 55, 55, 0.1); /* Ombre rouge légère */
+}
+
+.contactme h2 {
+    color: #FF3737; /* Rouge vif */
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.contactme p, .contactme label{
+    color: whitesmoke;
+}
+.contactme input[type="text"],
+.contactme input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #FF3737; /* Bordure rouge */
+    border-radius: 5px;
+    
+}
+
+.contactme input[type="text"]:focus,
+.contactme input[type="email"]:focus {
+    outline: none;
+    border-color: #FF3737; /* Rouge vif */
+    box-shadow: 0 0 10px rgba(255, 55, 55, 0.2); /* Ombre rouge légère */
+}
+
+footer {
+    background-color: #FF3737; /* Rouge vif */
+    color: #FFFFFF; /* Blanc */
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.char-container img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer; /* Ajout d'un curseur de souris pour indiquer qu'on peut cliquer */
+}
+
+.char-description {
+    width: 300px;
+    padding: 10px;
+    background-color: #343A40; /* Même couleur que le fond de la section */
+    border-radius: 5px;
+    margin-top: 10px;
+    color: wheat;
+}
+
+.hidden {
+    display: none;
+}

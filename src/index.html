@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My-Site</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="site-title"><a href="#">MY-OTAKU-SITE</a></div>
+            <div class="links-div">
+                <ul class="links-ul">
+                    <li><a href="#aboutme">About Me</a></li>
+                    <li><a href="#myfav">My Fav Characters</a></li>
+                    <li><a href="#contactme">Contact Me</a></li>
+                </ul>
+            </div>
+            <div>
+                <input type="text" placeholder="search">
+                <button type="submit">Login</button>
+            </div>
+        </nav>
+    </header>
+    <main class="main-content">
+        <div class="aboutme">
+            <h2>ABOUT ME</h2>
+            <p>Hi everyone ! Let's me introduce my self !
+               My name is Samuel HOUNGBO i'm web-designer and software developer !
+                I'm a 18 years old and i'm 5'2. I'm a big manga lover and later i wantto work 
+                on a studio animation like 'Crunchyroll', 'MAPPA' or 'FUNIMATION'.
+                In this site i want to introduce you some of my favs manga charachters.
+                Ready ? Let's GOOO !!
+            </p>
+        </div>
+        <div class="myfav">
+            <h2>My Favs Charachters</h2>
+            <div class="char-container">
+                <img src="../image/gai.jpg" alt="Gai maito" class="char-image">
+                <div class="char-description hidden">I love gai maito cause he is the most powerful ninja in the hidden leaf village, with he taijutsu, he show that "Even a failure with a lot of training can become a real genius"</div>
+        
+                <img src="../image/inosuke.jpg" alt="inosuke" class="char-image">
+                <div class="char-description hidden">I love Inosuke Hashibira of demon slayer cause he's really fun. But he's also strong. Each moment with inosuke learn you that you can be  strong without being always serious</div>
+        
+                <img src="../image/Tanjiro.jpg" alt="Tanjiro" class="char-image">
+                <div class="char-description hidden">Tanjiro Kamado is not only very nice but also very dangerous. With him you learn that for a family you are capable of anything; Absolutely everything</div>
+        
+                <img src="../image/zenitsu.jpg" alt="zenitsu" class="char-image">
+                <div class="char-description hidden">Zenitsu Agatsuma...That's the funniest part. Just like inosuke, he makes you understand that the potential of an individual is always at its peak when you put your willpower into it</div>
+        
+                <img src="../image/zoro.jpg" alt="zoro" class="char-image">
+                <div class="char-description hidden">Roronoa Zoro...What can I say except strength, charisma, power and very little sense of direction</div>
+        
+                <img src="../image/asta.jpg" alt="Asta" class="char-image">
+                <div class="char-description hidden">Asta It is exactly as gaï, filled with determination, will, to prove that even without anything, you can become something if you work hard. This is the character that reminds me the most of this quote from Kobe Bryant..."Great things come from hard work and perseverance. No excuses !"</div>
+            </div>
+        </div>
+        <div class="contactme">
+            <h2>Contact Me</h2>
+            <p>If you want to contact me, just put your mail comment and phone number i'll answer</p>
+            <div>
+                <form action="server.php" method="post">
+                    <label for="">Name : </label><input type="text">
+                    <label for="">Email :</label><input type="email">
+                    <label for="">Comment : </label><input type="text">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>copyright @SamDev 2024 This website is submit to some copyright license</p>
+    </footer>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const charImages = document.querySelectorAll('.char-image');
+        
+        charImages.forEach(image => {
+            image.addEventListener('click', function() {
+                const description = this.nextElementSibling;
+                
+                if (description.classList.contains('hidden')) {
+                    description.classList.remove('hidden');
+                    description.style.display = 'block';
+                } else {
+                    description.classList.add('hidden');
+                    description.style.display = 'none';
+                }
+            });
+        });
+    });
+    </script>
+</html>
